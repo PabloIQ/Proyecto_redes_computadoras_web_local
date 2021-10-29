@@ -1,0 +1,39 @@
+#contenedor {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    width: auto;
+    padding: 5%;
+    margin: 5% 10% 5% 10%;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.h1 {
+    padding: 0;
+}

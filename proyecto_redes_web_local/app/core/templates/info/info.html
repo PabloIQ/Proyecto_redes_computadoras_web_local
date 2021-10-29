@@ -1,0 +1,122 @@
+{% extends 'layout/layout.html' %}
+
+{% block contenido %}
+	{% include 'message/messages.html' %}
+
+		<div class="card h1">
+			<div class="card-body h1">
+				<p class="card-text h1">
+					<h1>Modelo OSI</h1>
+			  	</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 7 – Aplicación</b></p> 
+					<p class="font-monospace">
+						La capa de aplicación es la que está en la parte superior,
+						es lo que la mayoría de los usuarios ven. En el modelo OSI,
+						esta es la capa que es la “más cercana al usuario final”.
+						Las aplicaciones que funcionan en la Capa 7 son aquellas con
+						las que los usuarios interactúan directamente. Un navegador web
+						(Google Chrome, Firefox, Safari, etc.) u otra aplicación (Skype, Outlook, Office)
+						son ejemplos de aplicaciones de Capa 7.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 6 – Presentación</b></p> 
+					<p class="font-monospace">
+						Esta representa el área que es independiente de la 
+						representación de datos en la capa de aplicación; en general, 
+						representa la preparación o traducción del formato de la aplicación 
+						al formato de red, o del formato de la red al formato de la aplicación. 
+						En otras palabras, la capa “presenta” datos para la aplicación o la red. 
+						Un buen ejemplo de esto es el cifrado y descifrado de datos para una 
+						transmisión segura: esto sucede en la Capa 6.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 5 – Sesión</b></p> 
+					<p class="font-monospace">
+						Cuando dos dispositivos, computadoras o servidores necesitan 
+						“hablar” entre sí, se debe crear una sesión, y esto se hace en la 
+						capa de sesión. Las funciones en esta capa implican configuración, 
+						coordinación (por ejemplo, cuánto tiempo debe esperar un sistema para 
+						recibir una respuesta) y terminación entre las aplicaciones en cada extremo de la sesión.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 4 – Transporte</b></p> 
+					<p class="font-monospace">
+						La capa de transporte se ocupa de la coordinación de la transferencia 
+						de datos entre los sistemas finales y los hosts. Cuantos datos enviar, 
+						a qué velocidad, a dónde va, etc. El ejemplo más conocido de Transport 
+						Layer es el Transmission Control Protocol (TCP), que está construido sobre 
+						el protocolo de Internet (IP), comúnmente conocido como TCP/IP. Los números 
+						de puerto TCP y UDP funcionan en la capa 4, mientras que las direcciones IP 
+						funcionan en la capa 3, la capa de red.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 3: red</b></p> 
+					<p class="font-monospace">
+						Aquí, en la capa de red, encontrará la mayor parte de la funcionalidad del 
+						enrutador que la mayoría de los profesionales de la red se preocupan y aman. 
+						En su sentido más básico, esta capa es responsable del reenvío de paquetes, 
+						incluido el enrutamiento a través de diferentes enrutadores. Quizás sepas que 
+						tu computadora de Boston quiere conectarse a un servidor en California, pero hay 
+						millones de caminos diferentes que tomar. Los enrutadores en esta capa ayudan a 
+						hacer esto de manera eficiente.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 2 – Enlace de datos</b></p> 
+					<p class="font-monospace">
+						La capa de enlace de datos proporciona transferencia de datos de nodo a 
+						nodo (entre dos nodos conectados directamente) y también maneja la corrección 
+						de errores de la capa física. Aquí también existen dos subcapas: la capa de 
+						Control de acceso al medio (MAC) y la capa de Control de enlace lógico (LLC). 
+						En el mundo de las redes, la mayoría de los conmutadores operan en la Capa 2.
+					</p>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text">
+					<p class="fs-5"><b>Capa 1 – Física</b></p> 
+					<p class="font-monospace">
+						En la parte inferior de nuestra inmersión OSI tenemos la capa física, que es 
+						la representación eléctrica y física del sistema. Esto puede incluir todo, 
+						desde el tipo de cable, el enlace de radiofrecuencia (como en un sistema 
+						inalámbrico 802.11), así como la distribución de pines, voltajes y otros 
+						requisitos físicos. Cuando se produce un problema de red, muchos profesionales 
+						de la red van directamente a la capa física para verificar que todos los cables 
+						estén conectados correctamente y que el enchufe no se haya desconectado del 
+						enrutador, el interruptor o la computadora, por ejemplo.
+					</p>
+				</p>
+			</div>
+		</div>
+{% endblock %}

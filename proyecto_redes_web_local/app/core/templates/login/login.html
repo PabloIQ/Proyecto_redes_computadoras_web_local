@@ -1,0 +1,26 @@
+{% extends 'layout/layout.html' %}
+
+{% block contenido %}
+    {% include 'message/messages.html' %}
+    
+
+    <div class="card text-end" style="width: 32rem;">
+        <div class="card-body">
+            <form class="login" method="post">
+                {% csrf_token %}
+                <h1>Iniciar sesión</h1>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input name="user" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Usuario" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                    <input name="password" type="password" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Contraseña" required>
+                </div>
+                <div class="btn-flex">
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
